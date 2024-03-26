@@ -1,0 +1,75 @@
+<div class="container" id="custom-margin-top">
+  <div class="row">
+    <div class="col-md-4 mt-3 mt-md-0">
+      <div class="most-viwed-heading">
+        <p>Most Viewed</p>
+      </div>
+
+      <div class="img">
+        <img class="image" src="assets/images/book4.png" alt="" />
+      </div>
+
+      <div class="most-viwed-p1">
+        <p>
+          The My School Days : A Novel of<br />
+          Elfhame(B&N Exclusive Edition)
+        </p>
+
+        <p>Karun Nair</p>
+
+        <div class="stars">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </div>
+        <div class="paragraph">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque ipsa
+          doloribus natus. Possimus enim in sapiente voluptatum.
+        </div>
+      </div>
+    </div>
+
+    <div class="col-8">
+      <div class="list">
+        <a class="most-viewed">Most Viewed</a>
+      </div>
+
+      <div class="container wrap d-flex flex-wrap">
+        @for(book of Books; track book.id ){
+        <!--First row-->
+        <div class="row" class="books-container">
+          <div
+            routerLinkActive="router-link-active"
+            class="col-lg-4 col-md-6 col-sm-12"
+          >
+            <div class="img1">
+              <img
+                src="http://localhost:3000/booksImgs/{{ book.image }}"
+                alt=""
+              />
+              <div class="ms-4 w-100">
+                <div class="mb-2">
+                  {{ book.title }}
+                </div>
+                <div class="mb-2">
+                  {{ book.author }}
+                </div>
+                <div class="stars d-flex">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        }
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,95 @@
+<div id="login" class="my-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 img-class">
+        <div class="d-flex justify-content-center align-items-center">
+          <img
+            src="../../../assets/imgs/ca2e0603acc850359bc02ff36f9634f4.png"
+          />
+        </div>
+      </div>
+      <div class="col-md-6 mt-5">
+        <div class="heading">
+          <p class="headings">Welc</p>
+
+          <span class="material-symbols-outlined"> import_contacts </span>
+          <p class="headings">me</p>
+        </div>
+        <p class="heading-para">Login with Email</p>
+
+        <form
+          [formGroup]="LoginForm"
+          (ngSubmit)="LoginUser(LoginForm)"
+          class="py-4"
+        >
+          <div *ngIf="error" class="alert alert-danger">{{ error }}</div>
+          <div class="input-wrapper my-2">
+            <label for="email">Email</label>
+            <input
+              class="form-control"
+              type="email"
+              name="email"
+              formControlName="email"
+            />
+            <div *ngIf="emailControl?.errors && emailControl?.touched">
+              <p
+                *ngIf="emailControl?.hasError('required')"
+                class="requiredcolor"
+              >
+                Email is required
+              </p>
+              <p *ngIf="emailControl?.hasError('email')" class="requiredcolor">
+                Invalid name format
+              </p>
+            </div>
+          </div>
+          <div class="input-wrapper my-5">
+            <label for="password">Password</label>
+            <input
+              class="form-control"
+              type="password"
+              name="password"
+              formControlName="password"
+            />
+            <div *ngIf="passwordControl?.errors && passwordControl?.touched">
+              <p
+                class="requiredcolor"
+                *ngIf="passwordControl?.hasError('required')"
+              >
+                password is required
+              </p>
+              <p
+                class="requiredcolor"
+                *ngIf="passwordControl?.hasError('pattern')"
+              >
+                Password must contain at least one lowercase letter, one
+                uppercase letter, one digit, and one special character.
+              </p>
+            </div>
+          </div>
+
+          <div class="d-flex justify-content-center align-items-center mb-3">
+            <button
+              type="submit"
+              class="registerbtn text-white py-2 px-5"
+              [disabled]="!LoginForm.valid"
+            >
+              <span *ngIf="!isLoading">Log In</span>
+              <i *ngIf="isLoading" class="fa-solid fa-spinner fa-spin"></i>
+            </button>
+          </div>
+          <div class="d-flex justify-content-center align-items-center">
+            <p>
+              <span class="text-black">Don’t have account?</span
+              ><a routerLink="/signup" class="registerButton"
+                ><span class="signup-title" routerLink="/signup"
+                  >Register Now</span
+                ></a
+              >
+            </p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

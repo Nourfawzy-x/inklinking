@@ -1,0 +1,140 @@
+.input-wrapper {
+  position: relative;
+}
+.row {
+  color: #211b5e !important;
+}
+
+.i-all {
+  border: 2px solid #211b5e;
+  border-radius: 6px;
+  position: relative;
+}
+
+.ll-all {
+  position: absolute;
+  top: -1.5ex;
+  z-index: 1;
+  left: 2em;
+  background-color: white;
+  padding: 0 2px;
+}
+.registerbtn {
+  background-color: var(--registeration-color);
+  font-weight: 200;
+  font-size: 18px;
+  border: 0;
+  border-radius: 12px;
+}
+.cancelbtn {
+  background-color: transparent !important;
+  font-weight: 200;
+  font-size: 18px;
+  border: 2px solid #211b5e;
+  color: #211b5e !important;
+  border-radius: 12px;
+}
+.img-class {
+  /* background: #000; */
+  width: 100%;
+  height: 100%;
+}
+.signup-title {
+  font-weight: 600;
+  color: var(--registeration-color);
+  font-size: 16px;
+}
+
+.dd-1 {
+  margin-right: 200px;
+}
+.pho-img {
+  margin-top: 10px;
+  margin-left: 5px;
+  color: white;
+}
+
+@media only screen and (max-width: 767px) {
+  .img-class {
+    margin: 0px 0px 0px 25px !important;
+  }
+}
+
+.role {
+  gap: 20px !important;
+}
+.icoo {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+}
+svg {
+  margin: 100px;
+}
+.custom-file-upload {
+  border: 1px solid #dadada;
+  display: inline-block;
+  padding: 6px 12px;
+  cursor: pointer;
+  background-color: #211b5e;
+  color: #000000;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  position: relative;
+  top: 400px;
+  left: 380px;
+}
+.size {
+  width: 40px;
+  height: 40px;
+}
+.custom-file-upload:hover {
+  background-color: #08005e;
+}
+
+input[type="file"] {
+  display: none;
+}
+.img-b {
+  border: 1px solid #dadada;
+  border-radius: 50%;
+  height: 80%;
+  width: 100%;
+}
+.m-img {
+  top: 100px;
+}
+
+.side-bar {
+  box-shadow: 4px -10px 10px 4px rgba(232, 229, 232, 0.76);
+}
+
+.navbar2 {
+  display: none;
+}
+@media (max-width: 780px) {
+  .navbar2 {
+    display: block;
+  }
+  .navbar1 {
+    display: none;
+  }
+  .padding {
+    display: none;
+  }
+  hr {
+    display: none;
+  }
+}
+@media (max-width: 900px) {
+  .side-bar {
+    display: none;
+  }
+  .da {
+    display: none;
+  }
+  .smallScreen {
+    display: block !important;
+  }
+}

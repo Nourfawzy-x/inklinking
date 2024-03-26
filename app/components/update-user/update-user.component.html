@@ -1,0 +1,160 @@
+<div class="row m-0 p-0">
+  <div class="col-md-2 side-bar py-2">
+    <app-side-bar></app-side-bar>
+  </div>
+  <div class="col-md-8 first-col mx-5">
+    <app-navbar-dashboard></app-navbar-dashboard>
+    <div id="login" class="my-5">
+      <div class="helo container">
+        <form
+          class="py-1"
+          (ngSubmit)="onSubmit()"
+          enctype="multipart/form-data"
+        >
+          <div class="row" *ngIf="user">
+            <div class="col-md-6">
+              <div class="header">
+                <h1>User Profile</h1>
+              </div>
+              <div class="col-md-6 img-class d-flex img-fluid">
+                <div class="m-img">
+                  <label
+                    for="file-upload"
+                    class="custom-file-upload"
+                    (change)="onFileSelected($event)"
+                  >
+                    <input
+                      id="file-upload"
+                      type="file"
+                      name="image"
+                      accept="image/*"
+                    />
+                    <i class="pho-img fa-solid fa-camera size"></i>
+                  </label>
+                  <img
+                    class="img-b"
+                    [src]="getImagePlaceholder()"
+                    width="180"
+                    height="180"
+                    alt="Selected Image"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 mt-5">
+              <div class="input-wrapper my-5">
+                <label class="ll-all" for="name">Full Name</label>
+                <input
+                  class="form-control i-all"
+                  type="text"
+                  name="fullName"
+                  [(ngModel)]="user.fullName"
+                />
+              </div>
+              <div class="input-wrapper my-1">
+                <label class="ll-all" for="email">Email</label>
+                <input
+                  class="form-control i-all"
+                  type="email"
+                  name="email"
+                  [(ngModel)]="user.email"
+                />
+              </div>
+
+              <div class="geneder">
+                <label for="Gender" class="my-3">Gender</label><br />
+                <div class="mx-5">
+                  <div class="dd-1 form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="gender"
+                      id="inlineRadio1"
+                      value="male"
+                      [(ngModel)]="user.gender"
+                    />
+                    <label class="form-check-label" for="inlineRadio1"
+                      >male</label
+                    >
+                  </div>
+                  <div class="dd-2 form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="gender"
+                      id="inlineRadio2"
+                      value="female"
+                      [(ngModel)]="user.gender"
+                    />
+                    <label class="form-check-label" for="inlineRadio2"
+                      >Female</label
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-wrapper mt-5">
+                <label class="ll-all" for="name">Phone</label>
+                <input
+                  class="form-control i-all"
+                  type="number"
+                  name="phone"
+                  [(ngModel)]="user.phone"
+                />
+              </div>
+
+              <div class="role d-flex">
+                <div class="col">
+                  <div class="d-flex input-wrapper my-5 dropdown">
+                    <label class="ll-all" for="name">Status</label>
+                    <select
+                      class="form-control i-all sizee"
+                      type="text"
+                      name="status"
+                      [(ngModel)]="user.status"
+                    >
+                      <option value="active">Active</option>
+                      <option value="inactive">Inactive</option>
+                    </select>
+                    <i class="icoo fa-solid fa-caret-down"></i>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="d-flex input-wrapper my-5">
+                    <label class="ll-all" for="name">Role</label>
+                    <select
+                      class="form-control i-all sizee"
+                      type="text"
+                      name="role"
+                      [(ngModel)]="user.role"
+                    >
+                      <option value="admin">Admin</option>
+                      <option value="user">User</option>
+                    </select>
+                    <i class="icoo fa-solid fa-caret-down"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="gap-5 d-flex justify-content-end">
+                  <button
+                    (click)="onCancel()"
+                    class="cancelbtn text-white py-2 px-5"
+                  >
+                    Cancel
+                  </button>
+                  <button
+                    type="submit"
+                    class="registerbtn text-white py-2 px-5"
+                  >
+                    Cofirm
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

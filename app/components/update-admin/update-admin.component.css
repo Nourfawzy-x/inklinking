@@ -1,0 +1,126 @@
+.input-wrapper {
+  position: relative;
+}
+
+.i-all {
+  border: 2px solid #211b5e;
+  border-radius: 6px;
+  position: relative;
+}
+
+.ll-all {
+  position: absolute;
+  top: -1.5ex;
+  z-index: 1;
+  left: 2em;
+  background-color: white;
+  padding: 0 2px;
+  color: #211b5e;
+}
+.registerbtn {
+  background-color: var(--registeration-color);
+  font-weight: 200;
+  font-size: 18px;
+  border: 0;
+  border-radius: 12px;
+}
+.cancelbtn {
+  background-color: transparent !important;
+  font-weight: 200;
+  font-size: 18px;
+  border: 2px solid #211b5e;
+  color: #211b5e !important;
+  border-radius: 12px;
+}
+
+.signup-title {
+  font-weight: 600;
+  color: var(--registeration-color);
+  font-size: 16px;
+}
+
+.dd-1 {
+  margin-right: 200px;
+}
+.geneder {
+  color: #211b5e;
+}
+
+@media only screen and (max-width: 767px) {
+  .img-class {
+    margin-left: 15px !important;
+    position: absolute;
+  }
+  svg {
+    position: absolute;
+    top: 0px;
+    left: 15px;
+  }
+  .formm {
+    position: absolute;
+    top: 500px;
+  }
+  .formmm {
+    position: absolute;
+    top: 850px;
+    width: 100%;
+  }
+  .for-btn {
+    position: absolute;
+    top: 1100px;
+    margin-left: 50px;
+  }
+  .d-1 {
+    /* height: 50px !important; */
+    margin: 30px 0 !important;
+    width: 100% !important;
+  }
+  .i-all {
+    width: 100% !important;
+  }
+  .passForm {
+    margin-top: 50px !important;
+  }
+  svg {
+    position: absolute;
+    top: 120px;
+    right: 250px;
+  }
+}
+svg {
+  margin-left: 100px;
+  margin-top: 50px;
+}
+
+.custom-file-upload {
+  border: 1px solid #dadada;
+  display: inline-block;
+  padding: 6px 12px;
+  cursor: pointer;
+  background-color: #f9f9f9;
+  color: #000000;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+.size {
+  width: 40px;
+  height: 40px;
+}
+.custom-file-upload:hover {
+  background-color: #e9e9e9;
+}
+
+input[type="file"] {
+  display: none;
+}
+.img-b {
+  margin: auto;
+  border: 1px solid #dadada;
+  border-radius: 50%;
+  width: 100%;
+  height: 50%;
+}
+.m-img {
+  top: 10pxs;
+}

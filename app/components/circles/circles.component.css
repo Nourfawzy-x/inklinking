@@ -1,0 +1,19 @@
+.circle-1{
+    height: 200px;
+    width: 200px;
+    border: 1px solid rgb(143, 138, 138);
+    border-radius: 5000px;
+    background-color: #D9D9D980 !important;
+    border: none;
+   
+  }
+  
+  .circle-2{
+    height: 100px;
+    width: 100px;
+    border: 3px dashed #9c9696cc !important;
+    border-radius: 5000px;
+  
+  }
+ 
+  

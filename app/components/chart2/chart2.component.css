@@ -1,0 +1,152 @@
+.graph {
+  position: relative;
+  z-index: 0;
+  background: #f8f9fc;
+}
+ul {
+  list-style-type: none;
+}
+/*-----------------------------*/
+/*Graph Code*/
+
+.scale-graph {
+  position: relative;
+  display: block;
+  height: 400px;
+  width: 100%;
+  padding: 20px 20px 50px 40px;
+}
+.scale-number {
+  color: var(--registeration-color);
+}
+.scale-markers {
+  position: absolute;
+  text-indent: -15px;
+  top: 20px;
+  bottom: 50px;
+  right: 20px;
+  left: 40px;
+  text-align: left;
+}
+
+.scale-marker {
+  position: relative;
+  display: block;
+  height: 20%;
+  width: 100%;
+  float: left;
+  border-bottom: 1px solid black;
+}
+
+.scale-value {
+  text-align: right;
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  line-height: 20px;
+  left: -25px;
+  bottom: -10px;
+}
+.scale-bars {
+  text-align: center;
+  display: block;
+
+  height: 100%;
+  border-bottom: 1px solid black;
+}
+.scale-wrap {
+  position: relative;
+  float: left;
+  height: 100%;
+  width: 10%;
+}
+.scale-bar {
+  position: absolute;
+  left: 7%;
+  right: 7%;
+  bottom: 0;
+  height: 0;
+  background: rgba(231, 231, 231, 0.75);
+  transition: all 1s;
+}
+
+.scale-bar:hover {
+  background: rgba(207, 213, 207, 0.65); /* Darken the color on hover */
+}
+.scale-number {
+  position: absolute;
+  line-height: 50px;
+  bottom: -50px;
+  width: 100%;
+  left: 50%;
+  margin-left: -50%;
+  text-align: center;
+}
+.scale-0 {
+  height: 60%;
+  background-color: #616bad;
+  width: 45%;
+}
+.scale-20 {
+  background-color: #e8b7d4;
+  width: 45%;
+  height: 70%;
+}
+.scale-40 {
+  background-color: #bfb8da;
+  width: 45%;
+  height: 90%;
+}
+.scale-60 {
+  background-color: #5b69aa;
+  width: 45%;
+  height: 40%;
+}
+.scale-70 {
+  background-color: #fcd4d4;
+  width: 45%;
+  height: 80%;
+}
+.scale-100 {
+  background-color: #5fb241;
+  width: 45%;
+  height: 20%;
+}
+.scale-90 {
+  background-color: #a5678e;
+  width: 45%;
+
+  height: 50%;
+}
+.scale-30 {
+  background-color: #d26789d6;
+  width: 45%;
+  height: 60%;
+}
+.chart * {
+  box-sizing: border-box;
+}
+
+.chart::after {
+  content: "";
+  position: absolute;
+  left: 25%;
+  top: 7.5%;
+  transform: translateX(100%);
+  width: 4px;
+  height: 86%;
+  border-radius: 2px;
+}
+.chart {
+  position: relative;
+  padding: 1em;
+  border-radius: 5px;
+  font-size: 16px;
+}
+.chart2,
+.chart3 {
+  background: #f8f9fc;
+  -webkit-box-shadow: 10px 10px 5px -4px rgba(217, 214, 217, 1);
+  -moz-box-shadow: 10px 10px 5px -4px rgba(217, 214, 217, 1);
+  box-shadow: 10px 10px 5px 0px rgb(232, 229, 232);
+}

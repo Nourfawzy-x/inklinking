@@ -1,0 +1,83 @@
+.navbar2 {
+  display: none;
+}
+@media (max-width: 780px) {
+  .navbar2 {
+    display: block;
+  }
+  .navbar1 {
+    display: none;
+  }
+  .padding {
+    display: none;
+  }
+  hr {
+    display: none;
+  }
+}
+h2 {
+  color: var(--registeration-color);
+}
+.book-input {
+  border: 1px solid var(--registeration-color);
+  border-radius: 8px;
+}
+.book-author--MUr {
+  color: #201b5d;
+  font-family: Inter, "Source Sans Pro";
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.2125;
+  margin-bottom: 0.5rem;
+  white-space: nowrap;
+}
+.confirm-btn {
+  background-color: var(--registeration-color);
+  color: white;
+}
+.confirm-btn:hover {
+  background-color: white;
+  border: var(--registeration-color) solid 1px;
+  color: var(--registeration-color);
+}
+.cancel-Btn:hover {
+  background-color: var(--registeration-color);
+  color: white;
+}
+.cancel-Btn {
+  background-color: white;
+  border: var(--registeration-color) solid 1px;
+  color: var(--registeration-color);
+}
+.side-bar {
+  box-shadow: 4px -10px 10px 4px rgba(232, 229, 232, 0.76);
+}
+
+.navbar2 {
+  display: none;
+}
+@media (max-width: 780px) {
+  .navbar2 {
+    display: block;
+  }
+  .navbar1 {
+    display: none;
+  }
+  .padding {
+    display: none;
+  }
+  hr {
+    display: none;
+  }
+}
+@media (max-width: 900px) {
+  .side-bar {
+    display: none;
+  }
+  .da {
+    display: none;
+  }
+  .smallScreen {
+    display: block !important;
+  }
+}

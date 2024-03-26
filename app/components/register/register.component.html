@@ -1,0 +1,178 @@
+<div id="login" class="my-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="header text-center">
+          <h1>SignUp</h1>
+          <h3>create an account to access the latest books and novels</h3>
+        </div>
+        <div *ngIf="error" class="alert alert-danger">{{ error }}</div>
+        <form
+          [formGroup]="registerForm"
+          (ngSubmit)="registerUser(registerForm)"
+        >
+          <div class="input-wrapper my-5">
+            <label for="fullName">full name</label>
+            <input
+              type="text"
+              name="fullName"
+              class="form-control"
+              formControlName="fullName"
+            />
+            <div *ngIf="fullNameControl?.errors && fullNameControl?.touched">
+              <p
+                *ngIf="fullNameControl?.hasError('required')"
+                class="requiredcolor"
+              >
+                Full name is required
+              </p>
+              <p
+                *ngIf="fullNameControl?.hasError('minlength')"
+                class="requiredcolor"
+              >
+                Minimum length is 3 characters
+              </p>
+              <p
+                *ngIf="fullNameControl?.hasError('maxlength')"
+                class="requiredcolor"
+              >
+                Maximum length is 20 characters
+              </p>
+              <p
+                *ngIf="fullNameControl?.hasError('pattern')"
+                class="requiredcolor"
+              >
+                Full name must contain a space and start with capitalized first
+                and last name.
+              </p>
+            </div>
+          </div>
+          <div class="input-wrapper my-5">
+            <label for="email">Email</label>
+            <input
+              class="form-control"
+              type="email"
+              name="email"
+              formControlName="email"
+            />
+            <div *ngIf="emailControl?.errors && emailControl?.touched">
+              <p
+                *ngIf="emailControl?.hasError('required')"
+                class="requiredcolor"
+              >
+                Email is required
+              </p>
+              <p *ngIf="emailControl?.hasError('email')" class="requiredcolor">
+                Invalid name format
+              </p>
+            </div>
+          </div>
+          <!-- <div class="input-wrapper py-4">
+            <label class="image-upload-container btn btn-bwm">
+              <input
+                formControlName="ImageInput"
+                type="file"
+                accept="image/*"
+                class="form-control"
+              />
+            </label>
+            <div *ngIf="imageControl?.errors && imageControl?.touched">
+              <p *ngIf="imageControl?.hasError('required')">
+                Image is required
+              </p>
+            </div>
+          </div> -->
+          <div class="input-wrapper my-5">
+            <label for="password">Password</label>
+            <input
+              class="form-control"
+              type="password"
+              name="password"
+              formControlName="password"
+            />
+            <div *ngIf="passwordControl?.errors && passwordControl?.touched">
+              <p
+                *ngIf="passwordControl?.hasError('required')"
+                class="requiredcolor"
+              >
+                password is required
+              </p>
+              <p
+                *ngIf="passwordControl?.hasError('pattern')"
+                class="requiredcolor"
+              >
+                Password must contain at least one lowercase letter, one
+                uppercase letter, one digit, and one special character.
+              </p>
+            </div>
+          </div>
+          <div class="input-wrapper mt-5 mb-4">
+            <label for="passwordConfirm">Confirm Password</label>
+            <input
+              class="form-control"
+              type="password"
+              name="passwordConfirm"
+              formControlName="passwordConfirm"
+            />
+            <div
+              *ngIf="
+                confirmPasswordControl?.errors &&
+                confirmPasswordControl?.touched
+              "
+            >
+              <p
+                *ngIf="confirmPasswordControl?.hasError('required')"
+                class="requiredcolor"
+              >
+                password is required
+              </p>
+              <p
+                *ngIf="confirmPasswordControl?.hasError('pattern')"
+                class="requiredcolor"
+              >
+                Invalid password format
+              </p>
+              <p
+                *ngIf="confirmPasswordControl?.hasError('passwordsNotMatch')"
+                class="bg-danger"
+                class="requiredcolor"
+              >
+                Passwords do not match.
+              </p>
+            </div>
+          </div>
+          <div class="d-flex justify-content-center align-items-center mb-3">
+            <button
+              type="submit"
+              [disabled]="registerForm.invalid"
+              class="registerbtn text-white py-2 px-5"
+            >
+              <span *ngIf="!isLoading">Sign Up</span>
+              <i *ngIf="isLoading" class="fa-solid fa-spinner fa-spin"></i>
+            </button>
+          </div>
+          <div class="d-flex justify-content-center align-items-center">
+            <p>
+              <span class="text-black">Already has an account?</span
+              ><span
+                class="signup-title"
+                routerLink="/login"
+                style="cursor: pointer"
+              >
+                Sign In</span
+              >
+            </p>
+          </div>
+        </form>
+        <div class="col-md-6"></div>
+      </div>
+      <div class="col-md-6 img-class">
+        <div class="d-flex justify-content-center align-items-center">
+          <img
+            src="../../../assets/imgs/ca2e0603acc850359bc02ff36f9634f4.png"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,112 @@
+{
+  "books": [
+    {
+      "id": "1",
+      "image": "image",
+      "name": "Reading on the Worlds",
+      "category": "Comic Books",
+      "Author": "John Klok",
+      "Price": "12$",
+      "description": "An enhanced reading experience at a fraction of the cost of print. As active readers"
+    },
+    {
+      "id": "2",
+      "image": "image2",
+      "name": " The Wikde Book",
+      "category": "Computers & Internet",
+      "Author": "Kusti Franti",
+      "Price": "82$",
+      "description": "a young boy learns about the power of stories when he explores his uncle's enchanted library of shape-shifting books"
+    },
+    {
+      "id": "3",
+      "image": "image3",
+      "name": "Absteact On Background",
+      "category": "Film & Photography",
+      "Author": "Ichae Semos",
+      "Price": "92$",
+      "description": "Background. This section should be the shortest part of the abstract and should very briefly outline the following information"
+    },
+    {
+      "id": "4",
+      "image": "image4",
+      "name": "Take On The Risk",
+      "category": "General Books",
+      "Author": "George Strong",
+      "Price": "92$",
+      "description": "Risk means taking a chance, trying something new and possibly failing or succeeding, but we must all experience risk in our lives."
+    },
+    {
+      "id": "5",
+      "image": "image5",
+      "name": "Find The Wave Book",
+      "category": "General Books",
+      "Author": "Fidel Martin",
+      "Price": "92$"
+    },
+    {
+      "id": "fe73",
+      "name": "alfi",
+      "category": "dramatic",
+      "author": "ahmedhossam",
+      "price": "90$"
+    },
+    {
+      "id": "4a9a",
+      "image": "image7",
+      "name": "the war",
+      "category": "action",
+      "author": "tawliand",
+      "price": "77$"
+    },
+    {
+      "id": "86a1",
+      "image": "image8",
+      "name": "peace",
+      "category": "romantic",
+      "Author": "hassan",
+      "Price": "99$"
+    },
+    {
+      "id": "82f6",
+      "image": "image 9",
+      "name": "llll",
+      "category": "jajn",
+      "Author": "kml",
+      "Price": "99$",
+      "description": "opkdekpodkdedewpokop"
+    },
+    {
+      "id": "a5a5",
+      "image": "image10",
+      "name": "jaja",
+      "category": "dramatic",
+      "Author": "wille",
+      "Price": "45$"
+    },
+    {
+      "id": "2475",
+      "image": "imag12",
+      "name": "uuuuu",
+      "category": "kololo",
+      "Author": "fyftft",
+      "Price": "88"
+    },
+    {
+      "id": "e20b",
+      "image": "C:\\fakepath\\Capture.PNG",
+      "name": "hbbjhb",
+      "category": "nhuhuihui",
+      "Author": "jknjknjk",
+      "Price": "66"
+    },
+    {
+      "id": "9be7",
+      "image": "C:\\fakepath\\Capture.PNG",
+      "name": "uhwrui",
+      "category": "nsanik",
+      "Author": "nsjkankj",
+      "Price": "msknkj"
+    }
+  ]
+}

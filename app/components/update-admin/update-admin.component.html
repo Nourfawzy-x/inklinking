@@ -1,0 +1,111 @@
+<div class="row p-0 m-0">
+  <div class="col-md-3 d-sm-block d-none side-bar">
+    <!-- <app-sidebar></app-sidebar> -->
+    <app-side-bar></app-side-bar>
+  </div>
+
+  <div class="col-md-9 col-sm-12">
+    <div class="row" id="big-box">
+      <app-navbar-dashboard></app-navbar-dashboard>
+
+      <div id="login" class="my-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 mt-5">
+              <div class="header">
+                <h1>Profile</h1>
+              </div>
+              <form class="formm py-1">
+                <div class="input-wrapper my-5">
+                  <label class="ll-all" for="name">Full Name</label>
+                  <input class="form-control i-all" type="text" name="text" />
+                </div>
+                <div class="input-wrapper my-1">
+                  <label class="ll-all" for="email">Email</label>
+                  <input class="form-control i-all" type="email" name="email" />
+                </div>
+
+                <div class="geneder">
+                  <label for="Gender" class="my-3">Gender</label><br />
+                  <div class="mx-5">
+                    <div class="dd-1 form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="inlineRadioOptions"
+                        id="inlineRadio1"
+                        value="option1"
+                      />
+                      <label class="form-check-label" for="inlineRadio1"
+                        >male</label
+                      >
+                    </div>
+                    <div class="dd-2 form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="inlineRadioOptions"
+                        id="inlineRadio2"
+                        value="option2"
+                      />
+                      <label class="form-check-label" for="inlineRadio2"
+                        >Female</label
+                      >
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="col-md-6 img-class d-flex img-fluid">
+              <div class="m-img">
+                <label for="file-upload" class="custom-file-upload">
+                  <input id="file-upload" type="file" />
+
+                  <i class="fa-solid fa-camera size"></i>
+                </label>
+
+                <img
+                  class="img-b"
+                  src="/assets/imgs/img2.png"
+                  alt="Selected Image"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="row formmm">
+            <div class="col-md-6">
+              <div class="d-1 passForm input-wrapper my-5">
+                <label class="ll-all" for="password">Password</label>
+                <input
+                  class="form-control i-all"
+                  type="password"
+                  name="password"
+                />
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="d-1 input-wrapper my-5">
+                <label class="ll-all" for="password">Confirm Password</label>
+                <input
+                  class="form-control i-all"
+                  type="password"
+                  name="password"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="row for-btn">
+            <div class="gap-5 d-flex justify-content-end">
+              <button type="reset" class="cancelbtn text-white py-2 px-5">
+                Cancel
+              </button>
+              <button type="submit" class="registerbtn text-white py-2 px-5">
+                Cofirm
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,202 @@
+<div class="row m-0 p-0 largeScreen">
+  <div class="col-md-2 side-bar pe-5">
+    <app-side-bar></app-side-bar>
+  </div>
+  <div class="col-md-9">
+    <app-navbar-dashboard></app-navbar-dashboard>
+    <div class="bookList-table">
+      <div class="bookList-table d-flex justify-content-between mt-2">
+        <h2>User List</h2>
+      </div>
+      <a class="text-decoration-none">
+        <table class="table-hover container table table-bordered ms-3">
+          <thead>
+            <tr>
+              <th scope="col">Img.</th>
+              <th scope="col">Name</th>
+              <th scope="col">Email</th>
+              <th scope="col">Phone</th>
+              <th scope="col">Status</th>
+              <th scope="col">Role</th>
+              <th scope="col">Action</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr *ngFor="let user of users; let i = index">
+              <td>
+                <img
+                  src="http://localhost:3000/usersImgs/{{ user.image }}"
+                  alt=""
+                  style="height: 100px; border-radius: 50px"
+                />
+              </td>
+              <td>{{ user.fullName }}</td>
+              <td>{{ user.email }}</td>
+              <td>{{ user.phone }}</td>
+              <td>{{ user.status }}</td>
+              <td>{{ user.role }}</td>
+              <td>
+                <div class="d-flex">
+                  <a
+                    routerLink="/editUser/{{ user._id }}"
+                    class="text-decoration-none"
+                  >
+                    <div class="icon1 me-2">
+                      <i class="fa-regular fa-pen-to-square fa-xs"></i>
+                    </div>
+                  </a>
+                  <div class="icon2">
+                    <i
+                      class="fa-solid fa-trash-can fs-xs"
+                      data-bs-toggle="modal"
+                      [attr.data-bs-target]="'#exampleModal' + user._id"
+                    ></i>
+                  </div>
+                </div>
+                <div
+                  class="modal fade"
+                  [id]="'exampleModal' + user._id"
+                  tabindex="-1"
+                  aria-labelledby="exampleModalLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">
+                          {{ user.title }}
+                        </h1>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="modal-body">
+                        Are you sure you want to delete this user?
+                      </div>
+                      <div class="modal-footer">
+                        <button
+                          type="button"
+                          class="btn btn-secondary"
+                          data-bs-dismiss="modal"
+                        >
+                          cancel
+                        </button>
+                        <button
+                          type="button"
+                          class="btn btn-outline-danger"
+                          (click)="deleteUser(user._id)"
+                          data-bs-dismiss="modal"
+                        >
+                          delete
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </a>
+    </div>
+  </div>
+</div>
+<div class="smallScreen">
+  <app-navbar-dashboard></app-navbar-dashboard>
+
+  <div class="bookList-table d-flex justify-content-around mt-2">
+    <h2>User List</h2>
+    <a class="text-decoration-none"> </a>
+  </div>
+  <a class="text-decoration-none">
+    <table class="table-hover container table table-bordered">
+      <thead>
+        <tr>
+          <th scope="col">Img.</th>
+          <th scope="col">Status</th>
+          <th scope="col">Role</th>
+          <th scope="col">Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let user of users; let i = index">
+          <td>
+            <img
+              src="http://localhost:3000/usersImgs/{{ user.image }}"
+              alt=""
+              style="height: 100px; border-radius: 50px"
+            />
+          </td>
+          <td>{{ user.status }}</td>
+          <td>{{ user.role }}</td>
+          <td>
+            <div class="d-flex">
+              <a
+                routerLink="/editUser/{{ user._id }}"
+                class="text-decoration-none"
+              >
+                <div class="icon1 me-2">
+                  <i class="fa-regular fa-pen-to-square fa-xs"></i>
+                </div>
+              </a>
+              <div class="icon2">
+                <i
+                  class="fa-solid fa-trash-can fs-xs"
+                  data-bs-toggle="modal"
+                  [attr.data-bs-target]="'#exampleModal' + user._id"
+                ></i>
+              </div>
+            </div>
+            <div
+              class="modal fade"
+              [id]="'exampleModal' + user._id"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">
+                      {{ user.title }}
+                    </h1>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    Are you sure you want to delete this user?
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      cancel
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-outline-danger"
+                      (click)="deleteUser(user._id)"
+                      data-bs-dismiss="modal"
+                    >
+                      delete
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </a>
+</div>

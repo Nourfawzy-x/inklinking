@@ -1,0 +1,127 @@
+.most-viwed-heading {
+  color: #211b5e;
+  font-size: 30px;
+  font-weight: 600;
+  font-family: Inter;
+  line-height: 36.31px;
+  margin-top: 20vh;
+}
+.img img {
+  width: 350px;
+  height: 493.79px;
+  margin-left: 40px;
+  margin-top: 70px;
+}
+
+.most-viwed-p1 {
+  color: #000000;
+  font-family: Inter;
+  font-weight: 500;
+  line-height: 30.26px;
+  font-size: 25px;
+  margin-left: 100px;
+  margin-top: 40px;
+}
+
+.name {
+  font-family: inter;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24.2px;
+  margin-left: 130px;
+  text-decoration: underline;
+}
+.paragraph {
+  font-size: 25px;
+  font-family: Inter;
+  font-weight: 500;
+  line-height: 30.26px;
+  color: #000000;
+}
+.list {
+  margin-left: 80px;
+  margin-top: 20vh;
+}
+.list a {
+  margin: 10px;
+  color: #211b5e;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24.2px;
+  font-family: Inter;
+  text-decoration: none;
+}
+.list .most-viewed {
+  font-weight: 600;
+  font-size: 20px;
+  text-decoration: underline;
+}
+.books-container {
+  display: flex;
+  margin: 20px;
+}
+.books-container img {
+  width: 180px;
+  height: 252.33px;
+  margin: 20px;
+}
+.booklist-name {
+  margin-left: 80px;
+  text-decoration: underline;
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18.15px;
+  color: #000000;
+}
+.stars .fa-solid {
+  color: #f9b508;
+  margin-left: 3px;
+}
+
+.container {
+  top: 50px;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  /* .custom-margin-top {
+        margin-top: 200vh; 
+        
+    } */
+  .most-viwed-heading {
+    margin-left: 170px;
+  }
+  .most-viwed-p1 {
+    margin-left: 50px;
+  }
+  .list {
+    display: none;
+  }
+}
+@media (max-width: 780px) {
+  #custom-margin-top {
+    margin-top: 670px;
+  }
+  .most-viwed-heading {
+    margin-left: 110px;
+  }
+  .img .image {
+    margin-left: 30px;
+  }
+  .most-viwed-p1 {
+    text-align: center;
+  }
+  .name {
+    margin: 0;
+    text-align: center;
+  }
+  .paragraph {
+    /* margin-left: 0px;*/
+    margin-right: 40px;
+  }
+  .stars {
+    margin-right: 0px;
+    text-align: center;
+  }
+}

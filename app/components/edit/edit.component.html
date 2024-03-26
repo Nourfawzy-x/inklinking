@@ -1,0 +1,100 @@
+<div class="row m-0 p-0">
+  <div class="col-md-2 side-bar py-2">
+    <app-side-bar></app-side-bar>
+  </div>
+  <div class="col-md-8 first-col mx-5">
+    <app-navbar-dashboard></app-navbar-dashboard>
+    <div class="container">
+      <h2>Edit Book</h2>
+      <hr />
+    </div>
+
+    <form (ngSubmit)="onSubmit()" enctype="multipart/form-data">
+      <section id="addBook">
+        <div class="container" *ngIf="Book">
+          <div class="row justify-content-between my-2">
+            <div class="col-md-5">
+              <label class="book-author--MUr">Book Name:</label>
+              <input
+                placeholder="The War & Peace"
+                class="form-control book-input"
+                type="text"
+                name="title"
+                [(ngModel)]="Book.title"
+              />
+            </div>
+            <div class="col-md-5">
+              <label class="book-author--MUr">Book Author:</label>
+              <input
+                placeholder="ALexandra wille"
+                class="form-control book-input"
+                type="text"
+                name="author"
+                [(ngModel)]="Book.author"
+              />
+            </div>
+          </div>
+          <div class="row justify-content-between my-3">
+            <div class="col-md-5">
+              <label class="book-author--MUr">Book Category:</label>
+              <input
+                placeholder="Commic"
+                class="form-control book-input"
+                type="text"
+                name="category"
+                [(ngModel)]="Book.category"
+              />
+            </div>
+            <div class="col-md-5">
+              <label class="book-author--MUr">Book Price:</label>
+              <input
+                placeholder="12$"
+                class="form-control book-input"
+                type="text"
+                name="price"
+                [(ngModel)]="Book.price"
+              />
+            </div>
+          </div>
+          <div class="my-3">
+            <div>
+              <label class="book-author--MUr">Upload image:</label>
+              <input
+                class="form-control book-input"
+                type="file"
+                name="image"
+                id="image"
+                accept="image/*"
+                (change)="onFileSelected($event)"
+              />
+            </div>
+          </div>
+
+          <div class="my-3">
+            <div>
+              <label class="book-author--MUr">Book Description:</label>
+              <textarea
+                placeholder="book description"
+                class="form-control book-input"
+                rows="4"
+                cols="50"
+                name="description"
+                [(ngModel)]="Book.description"
+              ></textarea>
+            </div>
+          </div>
+          <div class="d-flex justify-content-end">
+            <div class="mx-2">
+              <button class="btn cancel-Btn" (click)="onCancel()">
+                cancel
+              </button>
+            </div>
+            <div class="mx-2">
+              <button class="btn confirm-btn" type="submit">confirm</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </form>
+  </div>
+</div>

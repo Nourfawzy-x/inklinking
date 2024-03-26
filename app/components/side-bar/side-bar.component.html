@@ -1,0 +1,60 @@
+<div class="side-bar">
+  <div class="logo mt-3">
+    <app-logo></app-logo>
+  </div>
+  <div class="my-3">
+    <div class="side-bar-heading">
+      <p>Shop</p>
+    </div>
+    <div class="icon px-5 mt-4 d-flex">
+      <i class="fa-solid fa-house me-1"></i>
+      <a routerLink="/home" class="side-bar-para">Home</a>
+    </div>
+  </div>
+  <div class="my-3">
+    <div class="side-bar-heading px-3">
+      <p>Admin</p>
+    </div>
+    <div class="icon px-5 mt-4 d-flex">
+      <i class="fa-solid fa-gauge me-1"></i>
+      <a routerLink="/dashboard" class="side-bar-para">Dashboard</a>
+    </div>
+    <div class="icon px-5 mt-4 d-flex">
+      <i class="fa-regular fa-user me-1"></i>
+      <a routerLink="/adminprofile" class="side-bar-para">Profile</a>
+    </div>
+  </div>
+  <div class="my-3">
+    <div class="side-bar-heading px-3">
+      <p>Books</p>
+    </div>
+    <div class="icon px-5 mt-4 d-flex">
+      <i class="fa-solid fa-book me-1"></i>
+      <a routerLink="/booklist" class="side-bar-para">Book List</a>
+    </div>
+    <div class="icon px-5 mt-4 d-flex">
+      <i class="fa-solid fa-plus me-1"></i>
+      <a routerLink="/add" class="side-bar-para">Add Book</a>
+    </div>
+  </div>
+  <div class="my-3">
+    <div class="side-bar-heading px-3">
+      <p>Users</p>
+    </div>
+    <div class="icon px-5 mt-4 d-flex">
+      <i class="fa-regular fa-user me-1"></i>
+      <a routerLink="/userlist" class="side-bar-para">User List</a>
+    </div>
+  </div>
+  <hr />
+  <div class="mt-4">
+    <div
+      class="side-bar-heading px-3 d-flex justify-content-center"
+      (click)="logOut()"
+      style="cursor: pointer"
+    >
+      <i class="fa-solid fa-right-from-bracket me-1"></i>
+      <p>LogOut</p>
+    </div>
+  </div>
+</div>

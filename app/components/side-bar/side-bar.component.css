@@ -1,0 +1,14 @@
+a,
+i,
+p {
+  text-decoration: none;
+  color: #211b5e;
+}
+
+.graph {
+  overflow: hidden; /* or auto, scroll, etc. */
+}
+
+.side-bar-heading {
+  overflow: hidden;
+}

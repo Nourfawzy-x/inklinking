@@ -1,0 +1,119 @@
+.users {
+  border: 3px solid #e1cdda;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(176, 173, 176, 1);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(176, 173, 176, 1);
+  box-shadow: 15px 15px 20px 0px #eae5e8b4;
+  border-radius: 8px;
+}
+h3 {
+  font-size: 1.5em;
+  line-height: 1.2em;
+  font-weight: 600;
+  color: #211b5e;
+}
+h5 {
+  font-size: 1.3em;
+  line-height: 1.2em;
+  color: #211b5e;
+}
+.one-user {
+  background-color: #e1cdda;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  margin-right: 20px;
+}
+.numbers {
+  font-weight: 700;
+  font-size: 20px;
+}
+.books {
+  border: #d2e9ca 3px solid;
+  border-radius: 8px;
+  box-shadow: 15px 15px 20px 0px #e6ede7b4;
+}
+.one-book {
+  background-color: #d2e9ca;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  margin-right: 20px;
+}
+.sale {
+  border: #fcd4d4 3px solid;
+  border-radius: 8px;
+  box-shadow: 15px 15px 20px 0px #efebeb;
+}
+.first-sale {
+  background-color: #fcd4d4;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  margin-right: 20px;
+}
+.order {
+  border: 3px solid #ebf2f9;
+  border-radius: 8px;
+  box-shadow: 15px 15px 20px 0px #e8e9ea;
+}
+.first-order {
+  background-color: #ebf2f9;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  margin-right: 20px;
+}
+.graph {
+  position: relative;
+  z-index: 0;
+  background: #f8f9fc;
+}
+ul {
+  list-style-type: none;
+}
+.dashboard {
+  color: #211b5e;
+}
+.container-fluid span {
+  color: #211b5e;
+}
+h3,
+h6,
+p,
+span {
+  color: var(--registeration-color);
+}
+@media (min-width: 1024px) and (max-width: 1060px) {
+  .first-order,
+  .first-sale,
+  .one-user,
+  .one-book {
+    padding: 8px;
+  }
+  .books,
+  .sale,
+  .orders,
+  .users {
+    padding: 8px 8px;
+  }
+}
